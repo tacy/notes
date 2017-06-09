@@ -137,4 +137,7 @@ tomcat-metrics-133681138-kphcm   1/1       Running   0          1d        192.16
 
 看到userDefinedMetrics就可以了.
 
+最好, 你需要部署heapster组件, 直接用log sink验证, 能看到有`custom/jmx_config_reload_failure_total = 0.000000`类似的指标.
+
+
 [^1]: [Collecting Application Metrics with cAdvisor](https://github.com/google/cadvisor/blob/master/docs/application_metrics.md)
